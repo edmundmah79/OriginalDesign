@@ -1,21 +1,35 @@
+
 void setup()
 {
-  size(500,500);
+  size(1000,1000);
 }
 void draw()
 {
-  background(127);
+  background(0,150,255);
   snowman();
-  person();
+  balloon();
 }
 void snowman()
 {
-	ellipse(250,250,50,50);
-	ellipse(250,315,80,80);
-	ellipse(250,425,140,140);
+	strokeWeight(4);
+	fill(255,255,255);
+	ellipse(mouseX,mouseY-60,50,50);	
+	ellipse(mouseX,mouseY,80,80);
+	ellipse(mouseX,mouseY+100,140,140);
+	line(mouseX-40,mouseY,mouseX-90,mouseY-20);
+	line(mouseX+40,mouseY,mouseX+90,mouseY-20);
 }
-void person()
+void balloon()
 {
-	ellipse(100,250,50,50);
-	line(100,275,100,400);
+	fill(30,255,130);
+	strokeWeight(7);
+	line(mouseX-90,mouseY-20,mouseX-90,mouseY-150);
+	noStroke();
+	ellipse(mouseX-90,mouseY-225,150,150);
+}
+void cloud()
+{
+	noStroke();
+	fill(255,255,255);
+
 }
