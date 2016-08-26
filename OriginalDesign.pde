@@ -54,8 +54,8 @@ void cloud()
 {
 	noStroke();
 	fill(80);
-	ellipse(500,500,100,200);
-	ellipse(400,500,100,80);
+	ellipse(520,500,100,150);
+	ellipse(490,500,100,80);
 	ellipse(570,520,70,70);
 	ellipse(610,530,50,50);
 }
