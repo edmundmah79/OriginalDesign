@@ -1,4 +1,3 @@
-
 void setup()
 {
   size(1000,1000);
@@ -55,11 +54,8 @@ void cloud()
 {
 	noStroke();
 	fill(80);
-	ellipse(500,500,200,100);
-	ellipse(430,480,50,50);
-	ellipse(460,460,50,50);
-	ellipse(500,455,50,50);
-	ellipse(540,460,50,50);
-	ellipse(575,470,50,50);
-
+	ellipse(500,500,100,200);
+	ellipse(350,500,150,100);
+	ellipse(570,520,70,70);
+	ellipse(610,530,50,50);
 }
